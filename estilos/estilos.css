@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* clases */
+
+@keyframes tituloHeader {
+
+from{margin-left: 0;}
+to{margin-left: 1.5;}
+
+}
+.animacionHeader{
+    width: 50%;
+    margin-left: 580px;
+    color: pink;
+    text-shadow: 1px  0px 0px black,
+                0px  1px 0px black,
+                -1px  0px 0px black,
+                0px -1px 0px black;
+    animation-name: tituloHeader;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+}
