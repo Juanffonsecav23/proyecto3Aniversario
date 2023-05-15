@@ -5,6 +5,22 @@
 
 /* clases */
 
+.Navbar{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    list-style: none;background-color: black;
+
+}
+.NavbarListItem{
+    text-decoration: none;
+    color: pink;
+}
+.NavbarListItem:hover{
+    color: aqua;
+}
+
 @keyframes tituloHeader {
 
 from{margin-left: 0;}
