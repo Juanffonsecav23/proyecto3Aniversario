@@ -4,18 +4,25 @@
 }
 
 /* clases */
-
+.AnimacionBackground{
+    background-color: black;
+}
 .Navbar{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
+    align-items: center;
     align-content: center;
-    list-style: none;background-color: black;
+    list-style: none;
+    background-color: black;
+    height: 50px;
+    margin: 0;
 
 }
 .NavbarListItem{
     text-decoration: none;
     color: pink;
+
 }
 .NavbarListItem:hover{
     color: aqua;
@@ -30,6 +37,8 @@ to{margin-left: 1.5;}
 .animacionHeader{
     width: 50%;
     margin-left: 580px;
+    margin-bottom: 0;
+    background-color: black;
     color: pink;
     text-shadow: 1px  0px 0px black,
                 0px  1px 0px black,
