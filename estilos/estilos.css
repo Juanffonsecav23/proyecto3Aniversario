@@ -48,3 +48,54 @@ to{margin-left: 1.5;}
     animation-duration: 3s;
     animation-iteration-count: 2;
 }
+
+@media only screen and (max-width:480px){
+
+    .navbar-collapse{
+        height: 200px;
+    }
+    @keyframes tituloHeader {
+
+        from{margin-left: 0;}
+        to{margin-left: 1.2;}
+        
+        }
+        .animacionHeader{
+            width: 70%;
+            margin-left: 80px;
+            margin-bottom: 0;
+            background-color: black;
+            color: pink;
+            text-shadow: 1px  0px 0px black,
+                        0px  1px 0px black,
+                        -1px  0px 0px black,
+                        0px -1px 0px black;
+            animation-name: tituloHeader;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+        }
+}
+
+@media only screen and (min-width:481px) and (max-width:978px){
+
+    @keyframes tituloHeader {
+
+        from{margin-left: 0;}
+        to{margin-left: 1.2;}
+        
+        }
+        .animacionHeader{
+            width: 100%;
+            margin-left: 280px;
+            margin-bottom: 0;
+            background-color: black;
+            color: pink;
+            text-shadow: 1px  0px 0px black,
+                        0px  1px 0px black,
+                        -1px  0px 0px black,
+                        0px -1px 0px black;
+            animation-name: tituloHeader;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+        }
+}
