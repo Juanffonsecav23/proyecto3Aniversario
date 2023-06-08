@@ -1,7 +1,9 @@
 *{
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Times New Roman', Times, serif;
+    size: 4fr;
 }
+
 
 /* clases */
 .AnimacionBackground{
@@ -27,28 +29,19 @@
 .NavbarListItem:hover{
     color: aqua;
 }
-
-@keyframes tituloHeader {
-
-from{margin-left: 0;}
-to{margin-left: 1.5;}
-
-}
-.animacionHeader{
-    width: 50%;
-    margin-left: 580px;
-    margin-bottom: 0;
-    background-color: black;
+.tituloIndex{
     color: pink;
+    margin: 10px;
     text-shadow: 1px  0px 0px black,
                 0px  1px 0px black,
                 -1px  0px 0px black,
                 0px -1px 0px black;
-    animation-name: tituloHeader;
-    animation-duration: 3s;
-    animation-iteration-count: 2;
 }
 
+
+
+
+/* Mobile */
 @media only screen and (max-width:480px){
 
     .navbar-collapse{
@@ -59,23 +52,46 @@ to{margin-left: 1.5;}
         from{margin-left: 0;}
         to{margin-left: 1.2;}
         
-        }
-        .animacionHeader{
-            width: 70%;
-            margin-left: 80px;
-            margin-bottom: 0;
-            background-color: black;
-            color: pink;
-            text-shadow: 1px  0px 0px black,
-                        0px  1px 0px black,
-                        -1px  0px 0px black,
-                        0px -1px 0px black;
-            animation-name: tituloHeader;
-            animation-duration: 3s;
-            animation-iteration-count: 2;
-        }
+    }
+    .animacionHeader{
+        width: 70%;
+        margin-left: 115px;
+        margin-bottom: 0;
+        background-color: black;
+        color: pink;
+        text-shadow: 1px  0px 0px black,
+                    0px  1px 0px black,
+                    -1px  0px 0px black,
+                    0px -1px 0px black;
+        animation-name: tituloHeader;
+        animation-duration: 3s;
+        animation-iteration-count: 2;
+    }
+    .imgsLists {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        size: 7fr;
+        padding: 0;
+    }
+    .imgsListsItems{
+        height: 150px;
+        width: 150px;
+        list-style: none;
+        border-radius: 1500px;
+        cursor: pointer;
+        margin: 5px 0 5px 0;
+    }
+    .parrafoIndex{
+        margin: 10px;
+        font-size: 15px;
+    }
 }
 
+/* Tablet */
 @media only screen and (min-width:481px) and (max-width:978px){
 
     @keyframes tituloHeader {
@@ -83,19 +99,89 @@ to{margin-left: 1.5;}
         from{margin-left: 0;}
         to{margin-left: 1.2;}
         
+    }
+    .animacionHeader{
+        /* width: 100%; */
+        margin-left: 39%;
+        margin-bottom: 0;
+        background-color: black;
+        color: pink;
+        text-shadow: 1px  0px 0px black,
+                    0px  1px 0px black,
+                    -1px  0px 0px black,
+                    0px -1px 0px black;
+        animation-name: tituloHeader;
+        animation-duration: 3s;
+        animation-iteration-count: 2;
+    }
+    .imgsLists {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        size: 7fr;
+        padding: 0;
+    }
+    .imgsListsItems{
+        height: 250px;
+        width: 250px;
+        list-style: none;
+        border-radius: 1500px;
+        cursor: pointer;
+        margin: 5px 0 5px 0;
+    }
+    .parrafoIndex{
+        margin: 10px;
+        font-size: 25px;
+    }
+
+
+/* Desktop */
+
+}
+@media only screen and (min-width:979px){
+    @keyframes tituloHeader {
+
+        from{margin-left: 0;}
+        to{margin-left: 1.5;}
+        
         }
-        .animacionHeader{
-            width: 100%;
-            margin-left: 280px;
-            margin-bottom: 0;
-            background-color: black;
-            color: pink;
-            text-shadow: 1px  0px 0px black,
-                        0px  1px 0px black,
-                        -1px  0px 0px black,
-                        0px -1px 0px black;
-            animation-name: tituloHeader;
-            animation-duration: 3s;
-            animation-iteration-count: 2;
-        }
+    .animacionHeader{
+        width: 100%;
+        margin-left: 43%;
+        margin-bottom: 0;
+        background-color: black;
+        color: pink;
+        text-shadow: 1px  0px 0px black,
+                    0px  1px 0px black,
+                    -1px  0px 0px black,
+                    0px -1px 0px black;
+        animation-name: tituloHeader;
+        animation-duration: 3s;
+        animation-iteration-count: 2;
+    }
+    .imgsLists {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        size: 7fr;
+        padding: 0;
+    }
+    .imgsListsItems{
+        height: 350px;
+        width: 350px;
+        list-style: none;
+        border-radius: 1500px;
+        cursor: pointer;
+        margin: 5px 0 5px 0;
+    }
+    .parrafoIndex{
+        margin: 10px;
+        font-size: 25px;
+    }
 }
